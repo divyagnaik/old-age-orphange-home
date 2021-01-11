@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+	div{
+	height:100 px;
+	margin:10px;
+	padding:10px;
+	width:1200px;
+	border: 5px solid grey;
+	positioning:relative;
+	left:50px;
+	
+	}
+	body {background-image:url("feed.jpeg");
+	background-size: 1800px 900px;
+	padding: 40px 30px;
+	}
+	input,textarea
+	{
+		display:block;
+		margin: 15px;
+		color:grey;
+		font-family:verdana;
+		font-size:18px;
+	
+	}
+	.count
+	{
+		position:absolute;
+		right:0px;
+		top:0px;
+		color:red;
+		font-weight:bolder;
+		border:4px solid black;
+		height:50px;
+		width:60px;
+		padding:5px;
+	
+	}
+	</style>
+	</head>
+	
+	<body>
+	 <h1><center>FEEDBACK</center></h1>
+	 <input type="button" value="Give feedback" onclick="newReview()">
+	 <label class="count" id="count" >0</label>
+	 
+	 <script>
+	
+		
+
+
+		function newReview()
+		{
+			var rvwDiv=document.createElement("div")
+			var feedback=document.createElement("input");
+			feedback.setAttribute("type","textbox")
+			feedback.setAttribute("placeholder","Enter Your Name")
+			
+			var rvw=document.createElement("textarea")
+			rvw.setAttribute("rows","5")
+			rvw.setAttribute("cols","100")
+			rvw.setAttribute("placeholder","Your comments here ....")
+			
+			
+			
+			rvwDiv.appendChild(feedback);
+			rvwDiv.appendChild(rvw);
+			document.body.appendChild(rvwDiv)
+			var txtBox=document.createElement("hr")
+			document.body.insertBefore(txtBox,rvwDiv)
+			
+			var count=document.getElementById("count");		
+			count.innerHTML=(parseInt(count.innerHTML))+1
+			
+			
+		
+		
+		}
+	 
+	 
+	 </script>
+	
+	
+	</body>
+
+
+
+</html>

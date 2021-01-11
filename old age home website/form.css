@@ -1,0 +1,71 @@
+
+#usr{
+
+  width: 60%;
+}
+
+
+#pwd{
+	
+  width: 25%;
+}
+
+/*#sub{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+} */
+h1{
+	text-align: center;
+	font-family: Arial, Helvetica;
+	
+  text-shadow: 3px 2px black;
+  font-weight: bold;
+}
+
+
+.btn_btn-default {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.btn_btn-default {
+  background-color:#FFDEAD; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.btn_btn-default:hover {
+  border-radius: 12px;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
+body  {
+  background-image: url("logo.jpg");
+  /*background-color: #cccccc;*/
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
